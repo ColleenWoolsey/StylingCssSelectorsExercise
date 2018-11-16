@@ -1,5 +1,5 @@
 
-  header { 
+header { 
       border: 1px solid goldenrod;
         }
 
@@ -7,16 +7,16 @@
  # as the href value, without bullets, and have some space between them horizontally
  Ensure that the navigation is semantically marked as such (i.e. wrap it in the 
 correct HTML tag).*/
-header > a {
-   list-style: none;
-   display: inline;
-   
-   margin-right: 15px;
-   color: goldenrod;
+nav {
+    display: inline;
 }
+nav a {
+    margin-right: 16px;
+}
+
 li {
     list-style: none;
-}
+   }
 
 /*Any text in an element with class "disabled" should be colored grey, 
 unless it is inside an anchor tag. If inside an anchor, it should be colored purple.*/
@@ -24,21 +24,22 @@ unless it is inside an anchor tag. If inside an anchor, it should be colored pur
     color: grey;
        }
 a .disabled {
-           color: purple;
+    color: purple;
        }
-       a.disabled {
-           color: purple;
+a.disabled {
+    color: purple;
        }
 
 /*Any text inside an element with a class of "active" should be colored yellow.*/
-  .active {
-      color: yellow;
+.active {
+    color: yellow;
   }
 
 /*Section elements should be contained within an article element.*/
 
 
-/*There are two missing closing tags in this document. Make sure you add them back in.*/
+/*There are two missing closing tags in this document.
+Make sure you add them back in. Line 72 and 92*/
 
 
 /*Make the "I'm red" text colored red.*/
@@ -68,11 +69,10 @@ a .disabled {
      border-radius: 10px;
  }
 
-
 /*Elements with a class of promo should have bold text that is also colored gold.*/
-.promo {
+.promo, promo > .disabled {
     font-weight: bold;
-    color: goldenrod;
+    color: gold;
 }
 
 /*Without adding any other attributes to the input fields in the footer, 
